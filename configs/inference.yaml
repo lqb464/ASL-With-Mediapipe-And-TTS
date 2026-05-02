@@ -1,0 +1,15 @@
+infer:
+  model_path: "models/checkpoints/best_model.pt"
+  meta_path: "data/processed/train_meta.json"
+
+  camera_index: 0
+
+  record_fps: 15.0
+  min_history: 1.0
+  smooth: 5
+
+  silent_when_no_hands: true
+
+  reset_after_silence_frames: 8
+  reset_after_still_frames: 8
+  stillness_threshold: 0.01

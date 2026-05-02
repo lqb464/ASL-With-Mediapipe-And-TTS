@@ -1,0 +1,76 @@
+data:
+  external_data_dir: "/data/external"
+  raw_data_dir: "data/raw"
+  processed_data_dir: "data/processed"
+
+label:
+  silence_label: "SILENCE"
+  threshold_score: 0.8
+  eps: 1e-8
+
+record:
+  countdown_seconds: 2.0
+  record_seconds: 2.0
+  record_fps: 24
+
+processing:
+  default_output_name: "train.npz"
+
+landmarks:
+  num_landmarks: 21
+
+  wrist: 0
+
+  index_mcp: 5
+  middle_mcp: 9
+  ring_mcp: 13
+  pinky_mcp: 17
+
+  thumb_tip: 4
+  index_tip: 8
+  middle_tip: 12
+  ring_tip: 16
+  pinky_tip: 20
+
+  bones:
+    - [0,1]
+    - [1,2]
+    - [2,3]
+    - [3,4]
+    - [0,5]
+    - [5,6]
+    - [6,7]
+    - [7,8]
+    - [0,9]
+    - [9,10]
+    - [10,11]
+    - [11,12]
+    - [0,13]
+    - [13,14]
+    - [14,15]
+    - [15,16]
+    - [0,17]
+    - [17,18]
+    - [18,19]
+    - [19,20]
+
+  angle_triplets:
+    - [1,2,3]
+    - [2,3,4]
+    - [5,6,7]
+    - [6,7,8]
+    - [9,10,11]
+    - [10,11,12]
+    - [13,14,15]
+    - [14,15,16]
+    - [17,18,19]
+    - [18,19,20]
+
+  tip_pairs:
+    - [4,8]
+    - [4,12]
+    - [4,16]
+    - [4,20]
+    - [8,12]
+    - [12,16]
+    - [16,20]
